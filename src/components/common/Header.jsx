@@ -1,5 +1,4 @@
-// src/components/common/Header.jsx
-import { Package, Search } from 'lucide-react';
+import { Package } from 'lucide-react';
 
 const Header = () => {
     return (

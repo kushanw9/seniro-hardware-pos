@@ -1,13 +1,13 @@
-// src/components/pos/QuickSale/QuickSaleItem.jsx
-import React from 'react';
-
-const QuickSaleItem = ({ item, onRemove }) => {
+export const QuickSaleItem = ({ item, onAddToCart, onRemoveItem }) => {
     return (
-        <div className="bg-white rounded-lg border p-3 hover:shadow-md transition-shadow cursor-pointer relative group">
+        <div
+            className="bg-white rounded-lg border p-3 hover:shadow-md transition-shadow cursor-pointer relative group"
+            onClick={() => onAddToCart(item)}
+        >
             <button
                 onClick={(e) => {
                     e.stopPropagation();
-                    onRemove(item.id);
+                    onRemoveItem(item.id);
                 }}
                 className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white rounded-full text-xs opacity-0 group-hover:opacity-100 transition-opacity"
             >
@@ -27,5 +27,3 @@ const QuickSaleItem = ({ item, onRemove }) => {
         </div>
     );
 };
-
-export default QuickSaleItem;
