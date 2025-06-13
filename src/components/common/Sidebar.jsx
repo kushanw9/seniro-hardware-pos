@@ -19,7 +19,7 @@ const Sidebar = () => {
                         <Users className="w-5 h-5" />
                         <span>Customers</span>
                     </a>
-                    <a href="/" className="flex items-center space-x-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
+                    <a href="/reports" className="flex items-center space-x-3 px-3 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">
                         <BarChart3 className="w-5 h-5" />
                         <span>Reports</span>
                     </a>
