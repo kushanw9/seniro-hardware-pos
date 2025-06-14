@@ -1,23 +1,97 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
+# Node.js dependencies and builds
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE specific files (IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+# Log files
+*.log
+logs/
+*.logs
+
+
+# Runtime data
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+
+# Coverage directory
+coverage/
+.nyc_output/
+
+# Debug logs
+debug.log
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Build files
+dist/
+build/
+out/
+
+# Database files
+*.sqlite
+*.sql
+database.dump
+
+# Uploads directory (for product images, etc.)
+uploads/
+public/uploads/
+
+# Sequelize migrations (if you want to version control them, remove this line)
+migrations/
+seeders/
+
+# Local development files
+*.local
+
+# Testing
+/test-results/
+/junit.xml
+
+
+ehthumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# System Files
+*.swp
+*.swo
+*~
